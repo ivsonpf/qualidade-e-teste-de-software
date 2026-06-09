@@ -13,6 +13,8 @@ Os códigos estão organizados por conceitos e técnicas aprendidas durante as a
 * 📁 **`/testes-integracao-bd`**: Testes focados na comunicação do Python com o banco de dados relacional. Avalia a integridade dos dados e as restrições do MySQL (como chaves únicas, campos `NOT NULL` e `CHECK`) utilizando controle de transações (`BEGIN` e `ROLLBACK`) para manter a base limpa. Contém:
   * Validação de regras de negócio para cadastro de livros (`test_cad_livros.py`).
 
+* 📁 **`/automacao-web-selenium`**: Scripts de automação ponta a ponta (E2E) simulando o comportamento do usuário no navegador. Contém testes de carregamento de página, login válido e login inválido usando Python, Selenium WebDriver e unittest.
+
 ## 🛠️ Tecnologias e Ferramentas Utilizadas
 * **Linguagem:** Python 3
 * **Framework de Teste:** `unittest` (Padrão do Python)
