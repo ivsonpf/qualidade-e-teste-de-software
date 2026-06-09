@@ -13,15 +13,20 @@ Os códigos estão organizados por conceitos e técnicas aprendidas durante as a
 * 📁 **`/testes-integracao-bd`**: Testes focados na comunicação do Python com o banco de dados relacional. Avalia a integridade dos dados e as restrições do MySQL (como chaves únicas, campos `NOT NULL` e `CHECK`) utilizando controle de transações (`BEGIN` e `ROLLBACK`) para manter a base limpa. Contém:
   * Validação de regras de negócio para cadastro de livros (`test_cad_livros.py`).
 
-* 📁 **`/automacao-web-selenium`**: Scripts de automação ponta a ponta (E2E) simulando o comportamento do usuário no navegador. Contém testes de carregamento de página, login válido e login inválido usando Python, Selenium WebDriver e unittest.
+* 📁 **`/automacao-web-selenium`**: Scripts de automação ponta a ponta (E2E) simulando o comportamento do usuário no navegador. Contém testes isolados de carregamento de página, login válido e login inválido. 
+  * **Nota:** Além dos scripts em Python, esta pasta contém a documentação formal dos **Casos de Teste (`/docs`)** e as **evidências de execução e falhas da aplicação (`/evidencias`)**.
 
 ## 🛠️ Tecnologias e Ferramentas Utilizadas
 * **Linguagem:** Python 3
 * **Framework de Teste:** `unittest` (Padrão do Python)
+* **Automação Web:** Selenium WebDriver
 * **Banco de Dados:** MySQL (via biblioteca `mysql-connector-python`)
 
 ## 🚀 Como executar os testes
-Para rodar os testes unitários, navegue até o diretório do arquivo pelo seu terminal e execute o comando abaixo substituindo pelo nome do arquivo desejado:
+
+Certifique-se de ter as bibliotecas necessárias instaladas (como `mysql-connector-python` e `selenium`). 
+
+Para rodar os testes unitários, navegue até o diretório do arquivo pelo seu terminal e execute o comando abaixo, substituindo pelo nome do arquivo desejado:
 
 ```bash
-python -m unittest nome_do_arquivo_de_teste.py
+python -m unittest nome_do_arquivo_de_teste.py -v
